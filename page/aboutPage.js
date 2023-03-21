@@ -14,7 +14,7 @@ const aboutPage = () => {
            
             <div class="img-in-box-icon">
         <div class="img-1 img">
-              <img src="../img/z4123150502958_6e22d563057dc75a748438a4e77dea4d.jpg" alt="">
+              <img src="https://res.cloudinary.com/dlu4tkcct/image/upload/v1679400746/Portfolio/z4123150502958_6e22d563057dc75a748438a4e77dea4d_mvemuo.jpg" alt="">
             </div>
       </div>
            <div class="icon">
