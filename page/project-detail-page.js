@@ -9,7 +9,7 @@ const projectDetailPage = ({ data: { id } }) => {
 
   useEffect(() => { 
     axios
-      .get(`http://localhost:3000/project/${id}`)
+      .get(`https://6409c607d16b1f3ed6dc6e4e.mockapi.io/Api_products/${id}`)
       .then((response) => {
         setProject(response.data);
       })

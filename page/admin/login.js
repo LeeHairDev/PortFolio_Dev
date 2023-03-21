@@ -1,33 +1,20 @@
 import { useState, useEffect } from "../../libs";
 
 const login = () => {
-      const [projectData, setProjectData] = useState([]);
 
-      useEffect(() => {
-        fetch("http://localhost:3000/account")
-          .then((response) => response.json())
-          .then((data) => setProjectData(data));
-      }, []);
        useEffect(()=>{
          const form = document.getElementById("form");
-
-         const usernameInput = document.getElementById("username");
-         const passwordInput = document.getElementById("password");
-         console.log(usernameInput);
 
          form.addEventListener("submit", (event) => {
            event.preventDefault();
     const username = event.target.elements.username.value;
     const password = event.target.elements.password.value;
 
-    for (let i = 0; i < projectData.length; i++) {
-      const item = projectData[i];
-      if (username === item.nameAccount && password === item.password) {
-        alert("Chào mừng" + " " + item.name);
+      if (username === "leehaidev.it@gmail.com" && password === "123456789") {
+        alert("Chào mừng Lê Sỹ Hải");
         window.location.href = "/admin/projects";
         return;
       }
-    }
     alert("Đăng nhập không thành công!");
   })
        })

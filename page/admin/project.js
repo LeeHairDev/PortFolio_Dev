@@ -10,9 +10,9 @@ const projectAdmin = () => {
   // const projects = JSON.parse(localStorage.getItem("project"))||[];
   // setProjects(projects);
 
-    fetch("http://localhost:3000/project") // call api 
-    .then((response) => response.json())
-    .then((data) => setProjects(data));
+    fetch("https://6409c607d16b1f3ed6dc6e4e.mockapi.io/Api_products") // call api
+      .then((response) => response.json())
+      .then((data) => setProjects(data));
       },[]);
   useEffect(() => {
     const btns = document.querySelectorAll(".btn-remove");
@@ -29,9 +29,12 @@ const projectAdmin = () => {
     // Xóa ở local
     setProjects(newProjects);
     console.log(projects);
-        fetch(`http://localhost:3000/project/${id}`,{
-          method: "DELETE"
-        });
+        fetch(
+          `https://6409c607d16b1f3ed6dc6e4e.mockapi.io/Api_products/${id}`,
+          {
+            method: "DELETE",
+          }
+        );
   }
       });
     }

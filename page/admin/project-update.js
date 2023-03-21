@@ -14,7 +14,7 @@ const AdminProjectUpdatePage = ({id}) => {
     */
    const [data, setData] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:3000/project/${id}`) // call api
+    fetch(`https://6409c607d16b1f3ed6dc6e4e.mockapi.io/Api_products/${id}`) // call api
       .then((response) => response.json())
       .then((data) => setData(data));
   },[]);
@@ -30,6 +30,7 @@ const AdminProjectUpdatePage = ({id}) => {
         const imageValue = document.getElementById("formFileMultiple");
         const titleValue = document.getElementById("titleValue");
         const gitValue = document.getElementById("gitValue");
+         const cateID = document.getElementById("cateIdValue");
       // if (projectName.value == "" && imageValue.value == "" && titleValue.value == "" && gitValue.value == ""){
   if (projectName.value.trim() === "") {
     alert("Vui lòng nhập tên dự án!");
@@ -48,6 +49,10 @@ const AdminProjectUpdatePage = ({id}) => {
     alert("Vui lòng nhập tiêu đề!");
     flag = false;
   }
+  if (cateID.value.trim() === "") {
+    alert("Vui lòng nhập mã loại dự án!");
+    flag = false;
+  }
   if (flag == true){
       // }
      const urls = await uploadFile(imageValue.files);
@@ -58,8 +63,9 @@ const AdminProjectUpdatePage = ({id}) => {
         link: urls,
         title: titleValue.value,
         git: gitValue.value,
+        categoryId: Number(cateID.value),
       };
-      fetch(`http://localhost:3000/project/${id}`, {
+      fetch(`https://6409c607d16b1f3ed6dc6e4e.mockapi.io/Api_products/${id}`, {
         method: "PUT",
         headers: {
           "content-type": "application/json",
@@ -93,6 +99,7 @@ const AdminProjectUpdatePage = ({id}) => {
         }
       };
   });
+  /*html*/
   return `
   <div class="d-flex gap-5 body-admin">
    ${menuAdmin()}
@@ -123,6 +130,12 @@ const AdminProjectUpdatePage = ({id}) => {
     <span class="input-group-text" id="basic-addon3">Title</span>
     <input type="text" class="form-control"  id="titleValue" aria-describedby="basic-addon3" placeholder="Title......." value="${
       data.title
+    }">
+  </div>
+  <div class="input-group mt-3">
+    <span class="input-group-text" id="basic-addon3">CateId</span>
+    <input type="number" class="form-control"  id="cateIdValue" aria-describedby="basic-addon3" value="${
+      data.categoryId
     }">
   </div>
           <div class="form-group  mt-3">

@@ -56,13 +56,5 @@
       "id": 4,
       "name": "Php"
     }
-  ],
-  "account": [
-    {
-      "id": 1,
-      "name": "Lê Sỹ Hải",
-      "nameAccount": "leehaidev.it@gmail.com",
-      "password": "123456789"
-    }
   ]
 }

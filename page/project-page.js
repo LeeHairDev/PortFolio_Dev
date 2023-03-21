@@ -7,20 +7,20 @@ const Projectpage = () => {
   const [categories, setCategories] = useState([]);
   const [project, setProjects] = useState([]);
 useEffect(() => {
-  fetch("http://localhost:3000/categories")
+  fetch("https://6409c607d16b1f3ed6dc6e4e.mockapi.io/Api_products")
     .then((response) => response.json())
     .then((data) => setCategories(data));
 }, []);
 useEffect(() => {
-  fetch("http://localhost:3000/project")
+  fetch("https://6409c607d16b1f3ed6dc6e4e.mockapi.io/Api_products")
     .then((response) => response.json())
     .then((project) => setProjects(project));
 }, []);
 // console.log(data);
   const onHandleClick = (id) => {
-    let url = "http://localhost:3000/project";
+    let url = "https://6409c607d16b1f3ed6dc6e4e.mockapi.io/Api_products";
     if (id > 1) {
-      url = `http://localhost:3000/categories/${id}?_embed=project`;
+      url = `https://6409c607d16b1f3ed6dc6e4e.mockapi.io/Api_products/${id}?_embed=project`;
       fetch(url)
         .then((response) => response.json())
         .then((data) => setProjects(data.project));

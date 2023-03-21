@@ -71,7 +71,7 @@ const AdminProjectAddPage = () => {
           git: gitValue.value,
         };
         // console.log(imageValue.files);
-        fetch("http://localhost:3000/project", {
+        fetch("https://6409c607d16b1f3ed6dc6e4e.mockapi.io/Api_products", {
           method: "POST",
           headers: {
             "content-type": "application/json",
