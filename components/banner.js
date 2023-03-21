@@ -19,7 +19,7 @@ const banner = () => {
 </div>
 <div class="image-profile col-sm-4">
  <div class="image-profile-mini col-sm-4">
- <img src="img/z4122535271404_d5a207183fb5ca0f9878d80ebb5e4c4a.jpg" alt="">
+ <img src="../img/z4122535271404_d5a207183fb5ca0f9878d80ebb5e4c4a.jpg" alt="">
 </div>
    <span class="border-after"></span>
 </div>
