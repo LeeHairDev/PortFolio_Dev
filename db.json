@@ -1,44 +1,4 @@
 {
-  "project": [
-    {
-      "id": 9,
-      "name": "Dự án đi làm 2",
-      "link": "https://images.template.net/wp-content/uploads/2017/04/21133527/fully-responsive-landing-page-template1.jpg",
-      "title": "Dự án này là dự án đầu tay được tôi viết bằng Html, Css, JavaScript, Bootstrap",
-      "git": "https://github.com/LeeHairDev",
-      "categoryId": 2,
-      "content": "For example, if you want to have a specific template for your “About” page, it might not be appropriate to name that page template “About Template” as it would be globally available to all pages (i.e. the user could apply it to any page). Instead, create a single use template and WordPress will render the page with the appropriate template, whenever a user visits the “About” page."
-    },
-    {
-      "id": 10,
-      "name": "Dự Án Đi Làm 2 update 7-3",
-      "link": [
-        "https://res.cloudinary.com/dlu4tkcct/image/upload/v1678206396/ECMA/gymc9nk8mcrblb1yu4xp.jpg"
-      ],
-      "title": "Dự án này là dự án đầu tay được tôi viết bằng Html, Css, JavaScript, Php và Bootstrap",
-      "git": "https://github.com/LeeHairDev"
-    },
-    {
-      "name": "Dự án mẫu",
-      "link": [
-        "https://res.cloudinary.com/dlu4tkcct/image/upload/v1677109504/ECMA/r7zvf1sn3vekxzggxoay.jpg"
-      ],
-      "title": "Đây là Dự Án Cuối cùng của tôi tại FPT Polytechnic được viết bằng Html, Css, React Js, Node Js, Bootstrap",
-      "git": "https://github.com/LeeHairDev",
-      "id": 11,
-      "categoryId": 3,
-      "content": "Every page template that has a template name can be selected by a user when they create or edit a page. The list of available templates can be found at Pages > Add New > Attributes > Template. Therefore, a WordPress user can choose any page template with a template name, which might not be your intention."
-    },
-    {
-      "name": "Dự án mẫu",
-      "link": [
-        "https://res.cloudinary.com/dlu4tkcct/image/upload/v1677140072/ECMA/ycp4r8bgosscc9olbhz9.jpg"
-      ],
-      "title": "Dự án này là dự án đầu tay được tôi viết bằng Html, Css, JavaScript, Php và Bootstrap",
-      "git": "https://github.com/LeeHairDev",
-      "id": 12
-    }
-  ],
   "categories": [
     {
       "id": 1,

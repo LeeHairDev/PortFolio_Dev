@@ -1,7 +1,7 @@
 const contact = () => {
     /*html*/
   return `
-    <div class="container-main app" id="about">
+    <div class="container-main app container" id="about">
       <div class="container" id="contact">
       <div class="box-contact">
         <div class="title-contact text-center">
@@ -33,17 +33,17 @@ const contact = () => {
             </div>
           </div>
           <div class="input-button-submit-contact col-sm-6" >
-            <div class="input-grid-box row">
-              <div class="input-grid col-sm-4 ">
-                <input type="text" placeholder="Your Name">
-                <input type="text" placeholder="Your Phone">
+            <div class="input-grid-box row w-100">
+              <div class="input-grid col-sm-6 ">
+                <input class='w-110' type="text" placeholder="Your Name">
+                <input class='w-100' type="text" placeholder="Your Phone">
               </div>
-              <div class="input-grid col-sm-4">
-                <input type="text" placeholder="Your Email">
-                <input type="text" placeholder="Subject">
+              <div class="input-grid col-sm-6">
+                <input class='w-100' type="text" placeholder="Your Email">
+                <input class='w-100' type="text" placeholder="Subject">
               </div>
             </div>
-            <textarea name="" id="" cols="52" rows="10" placeholder="Write your message here"></textarea>
+            <textarea class='w-100' name="" id="" cols="" rows="10" placeholder="Write your message here"></textarea>
            <div class="btn-smt"> <button class="Submit-contact button-86">Submit Now</button></div>
           </div>
         </div>

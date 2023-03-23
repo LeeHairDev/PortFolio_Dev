@@ -63,7 +63,7 @@ const AdminProjectUpdatePage = ({id}) => {
         link: urls,
         title: titleValue.value,
         git: gitValue.value,
-        categoryId: Number(cateID.value),
+        categoryId: cateID.value,
       };
       fetch(`https://6409c607d16b1f3ed6dc6e4e.mockapi.io/Api_products/${id}`, {
         method: "PUT",

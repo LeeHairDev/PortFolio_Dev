@@ -17,4 +17,5 @@ const Homepage = () => {
     ${footer()}
     `;
 };
+
 export default Homepage;
